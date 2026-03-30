@@ -1,13 +1,11 @@
 {
-  "name": "tag-textarea",
+  "name": "tagged-textarea",
   "version": "1.0.0",
-  "description": "带标签的文本域组件",
-  "main": "dist/tag-textarea.umd.js",
-  "module": "dist/tag-textarea.es.js",
-  "types": "dist/types/index.d.ts",
+  "description": "A textarea component with tag support",
+  "main": "dist/tagged-textarea.umd.js",
+  "module": "dist/tagged-textarea.es.js",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "scripts": {
     "dev": "vite",
@@ -22,10 +20,20 @@
     "tag",
     "input",
     "vue3",
-    "component"
+    "component",
+    "rich-text",
+    "vue-component"
   ],
-  "author": "",
+  "author": "damahas",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damahas/tagged-textarea.git"
+  },
+  "homepage": "https://damahas.github.io/tagged-textarea/index.html",
+  "bugs": {
+    "url": "https://github.com/damahas/tagged-textarea/issues"
+  },
   "peerDependencies": {
     "vue": "^3.3.0"
   },

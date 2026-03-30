@@ -10,8 +10,8 @@ export default defineConfig(({ mode }) => {
       build: {
         lib: {
           entry: resolve(__dirname, 'src/index.js'),
-          name: 'TagTextarea',
-          fileName: (format) => `tag-textarea.${format}.js`,
+          name: 'TaggedTextarea',
+          fileName: (format) => `tagged-textarea.${format}.js`,
           formats: ['es', 'umd']
         },
         rollupOptions: {
@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => {
             },
             assetFileNames: (assetInfo) => {
               if (assetInfo.name === 'style.css') {
-                return 'tag-textarea.css'
+                return 'tagged-textarea.css'
               }
               return assetInfo.name
             }
@@ -35,7 +35,7 @@ export default defineConfig(({ mode }) => {
 
   // 开发模式配置
   return {
-    base: '/tag-textarea/',
+    base: '/tagged-textarea/',
     plugins: [vue()],
     server: {
       port: 3000,
