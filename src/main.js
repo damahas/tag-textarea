@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import TagTextarea from './index.js'
-import App from './demo/App.vue'
+import App from './example/App.vue'
 
 const app = createApp(App)
 
